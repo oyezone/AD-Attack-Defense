@@ -1,4 +1,34 @@
+## Architecture Diagram
+
+                         +----------------------+
+                         |      DC01            |
+                         |  Windows Server 2022 |
+                         |  Role: AD DS + DNS   |
+                         |  IP: 192.168.1.214   |
+                         +----------+-----------+
+                                    |
+                                    |  Kerberos (TCP/UDP 88)
+                                    |  LDAP (389)
+                                    |  SMB (445)
+                                    |
+                         +----------v-----------+
+                         |        OYE           |
+                         |  Domain Workstation  |
+                         |  IP: 192.168.1.193   |
+                         +----------------------+
+
+        Domain: corp.local
+        Authentication Authority: DC01
+        Log Source: Windows Security Log (DC01)
+
+        ## Trust Model
+
+- DC01 acts as the Kerberos Key Distribution Center (KDC).
+- OYE authenticates to DC01 for ticket-granting tickets (TGT) and service tickets (TGS).
+- Service account (corp\svc-sql) introduces Kerberos SPN attack surface.
+- All security telemetry validated from DC01 Security Log.
 # Architecture Overview
+
 
 ## Environment Summary
 
