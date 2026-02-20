@@ -27,3 +27,11 @@
 - Privilege manipulation fully logged
 
 Hardening actions resulted in measurable identity security posture improvement.
+
+## Supporting Evidence
+
+- Admin Logon Restriction  
+  ![Admin Block](../evidence/06-admin-login-blocked.png)
+
+- Kerberos AES Enforcement  
+  ![AES](../evidence/13-kerberos-encryption-hardened-aes.png)
