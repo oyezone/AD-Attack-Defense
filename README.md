@@ -88,6 +88,33 @@ Key evidence includes:
 - Kerberos encryption transition (RC4 → AES)
 - Logon type analysis
 
+
+
+---
+
+## Evidence Reference Matrix
+
+All validation artifacts are located in the `/evidence` directory.
+
+| Control / Scenario | Event ID | Screenshot File |
+|--------------------|----------|------------------|
+| DC01 IP Configuration | N/A | evidence/01-architecture-dc01-ipconfig.png |
+| Workstation IP Configuration | N/A | evidence/02-architecture-workstation-ipconfig.png |
+| OU Structure | N/A | evidence/03-ou-structure.png |
+| Admin Logon Restriction GPO | N/A | evidence/04-gpo-admin-logon-restriction.png |
+| Advanced Audit Policy Enabled | N/A | evidence/05-gpo-advanced-audit-policy.png |
+| Admin Logon Block Validation | 4625 | evidence/06-admin-login-blocked.png |
+| User Created | 4720 | evidence/07-attack-user-created-4720.png |
+| Added to Domain Admins | 4732 | evidence/08-attack-added-to-admins-4732.png |
+| User Deleted | 4726 | evidence/09-attack-user-deleted-4726.png |
+| Process Creation (Command Line Logging) | 4688 | evidence/10-attack-process-creation-4688.png |
+| SPN Configuration | N/A | evidence/11-kerberos-spn-configured.png |
+| Kerberos TGS Request (RC4 0x17) | 4769 | evidence/12-kerberos-tgs-request-4769-rc4.png |
+| Kerberos Hardened to AES (0x12) | 4769 | evidence/13-kerberos-encryption-hardened-aes.png |
+| Logon Type 3 (Network) | 4624 | evidence/14-logon-type-3-network.png |
+| Logon Type 10 (RDP) | 4624 | evidence/15-logon-type-10-rdp.png |
+
+
 ---
 
 ## Security Impact
@@ -118,3 +145,6 @@ The outcome reflects practical capability in:
 | Command Execution | T1059 | Process creation telemetry monitored |
 
 This mapping aligns simulated activity to enterprise threat modeling frameworks and validates detection coverage against known adversary behaviors.
+
+
+
