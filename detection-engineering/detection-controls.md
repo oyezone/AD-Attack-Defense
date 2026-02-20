@@ -34,3 +34,18 @@ This confirms visibility coverage across identity-related attack paths.
 
 - Kerberos TGS Monitoring  
   ![4769](../evidence/12-kerberos-tgs-request-4769-rc4.png)
+
+
+---
+
+## MITRE ATT&CK Mapping
+
+| Technique | MITRE ID | Description |
+|------------|----------|-------------|
+| Create Account | T1136 | Created new domain user |
+| Account Manipulation | T1098 | Added user to Domain Admins group |
+| Kerberoasting Exposure | T1558.003 | Service account SPN ticket requested |
+| Valid Accounts | T1078 | Authenticated domain logon |
+| Command Execution | T1059 | Process creation telemetry monitored |
+
+This mapping validates detection coverage against known adversary techniques and aligns telemetry to industry threat modeling standards.
