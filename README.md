@@ -1,82 +1,85 @@
-## Overview
+# Active Directory Attack + Defense Lab
 
-This project simulates a hybrid enterprise Active Directory environment to demonstrate a full attack-to-defense lifecycle within a Windows domain.
+Enterprise-style Active Directory security lab demonstrating realistic attack simulation, detection engineering, and defensive hardening.
 
-The lab was designed to replicate real-world security engineering workflows, including:
+---
 
-- Active Directory misconfiguration analysis
-- Kerberos service ticket abuse simulation (Kerberoast surface)
-- Privilege escalation detection
-- Authentication telemetry analysis
-- Advanced audit policy configuration
-- Defensive hardening validation
+##  Executive Summary
 
-Rather than focusing solely on offensive tooling, this project emphasizes controlled attack simulation followed by measurable defensive improvement.
+This project simulates a corporate Active Directory environment to:
 
-The goal was not only to generate attack telemetry, but to:
+- Identify AD attack surfaces
+- Generate real authentication telemetry
+- Enable enterprise-grade audit logging
+- Harden exposed configurations
+- Validate measurable posture improvement
 
-- Enable enterprise-grade logging
-- Validate detection visibility
-- Reduce attack surface exposure
-- Confirm security posture improvements through evidence
+Focus: security engineering, not tool execution.
 
-This reflects the responsibilities of modern Security Engineers, Detection Engineers, and Blue Team practitioners operating in corporate Active Directory environments.
+---
 
-## Lab Architecture
+##  Lab Environment
 
-### Domain Information
-- Domain Name: corp.local
-- Forest Level: Windows Server 2025
-- Functional Scope: Single-domain lab environment
+| Component | Value |
+|------------|--------|
+| Domain | corp.local |
+| Domain Controller | DC01 (192.168.1.214) |
+| Workstation | OYE (192.168.1.193) |
+| Roles | AD DS, DNS |
+| Log Source | Windows Security Log |
 
-### Domain Controller
-- Hostname: DC01.corp.local
-- Role: Active Directory Domain Services (AD DS) + DNS
-- IP Address: 192.168.1.214
-- Default Gateway: 192.168.1.254
-- Primary Log Source: Windows Security Log
+---
 
-### Domain Workstation
-- Hostname: OYE.corp.local
-- Role: Domain-joined client
-- IP Address: 192.168.1.193
-- DNS Server: 192.168.1.214 (DC01)
+##  Attack Scenarios Simulated
 
-### Authentication Flow
+| Technique | Events Generated |
+|------------|------------------|
+| Service Account + SPN Exposure | 4769 |
+| Privilege Escalation Simulation | 4720 / 4732 / 4726 |
+| Command Execution Monitoring | 4688 |
+| Logon Pattern Analysis | 4624 (Type 3 / 10) |
 
-All authentication and attack simulations originated from the domain workstation (OYE) and were logged centrally on the Domain Controller (DC01).
+---
 
-Primary authentication mechanisms observed:
+## 🔎 Detection Engineering Implemented
 
-- Kerberos (Service Ticket Requests – Event ID 4769)
-- Interactive and Remote Logons (Event ID 4624)
-- Process Creation (Event ID 4688)
-- Account Management Events (4720, 4732, 4726)
+- Advanced Audit Policy enabled
+- Process creation with command-line logging validated
+- Kerberos TGS monitoring configured
+- Logon type differentiation validated
+- Administrative group manipulation visibility confirmed
 
-## What I Built
+---
 
-This project required building and configuring a functional Active Directory environment from the ground up.
+##  Hardening Measures Applied
 
-### Infrastructure
-
-- Deployed Windows Server as Domain Controller (DC01)
-- Installed and configured Active Directory Domain Services
-- Configured integrated DNS for corp.local
-- Joined Windows 11 workstation to domain
-- Verified domain authentication and name resolution
-
-### Organizational Structure
-
-- Created Organizational Units (OUs) for administrative control
-- Implemented separation between standard users and administrative accounts
-- Configured dedicated administrative accounts
+- Enforced AES-only Kerberos encryption
+- Restricted privileged account logon scope
 - Reviewed Domain Admin group membership
+- Reduced Kerberoast exposure surface
 
-### Group Policy Controls
+---
 
-- Implemented logon restriction policies
-- Restricted where privileged accounts can log in
-- Enabled Advanced Audit Policy configuration
-- Configured process creation auditing with command-line logging
+## 📊 Validation Results
 
-The environment was intentionally structured to simulate a small enterprise domain with realistic authentication and administrative boundaries.
+| Control | Status |
+|----------|--------|
+| Command-line logging (4688) | Verified |
+| Kerberos monitoring (4769) | Verified |
+| Privilege change detection | Verified |
+| Logon type visibility | Verified |
+| RC4 disabled |  Confirmed |
+
+---
+
+## Evidence
+
+All supporting screenshots and logs available in the `evidence/` directory.
+
+---
+
+## Outcome
+
+Demonstrated end-to-end Active Directory security lifecycle:
+
+Build → Attack → Detect → Harden → Validate
