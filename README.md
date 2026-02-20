@@ -171,3 +171,77 @@ This mapping aligns simulated activity to enterprise threat modeling frameworks 
 
 
 
+
+
+# Active Directory Attack + Defense Lab
+
+Enterprise-style Active Directory security engineering project demonstrating realistic attack simulation, detection validation, and defensive hardening.
+
+---
+
+## Project Overview
+
+This repository models a corporate identity environment and walks through the full security lifecycle:
+
+Architecture → Attack Simulation → Detection Engineering → Hardening → Validation
+
+The objective was to simulate realistic Active Directory attack paths, generate authentication telemetry, apply defensive controls, and validate measurable security posture improvement.
+
+---
+
+## Repository Structure
+
+### Architecture
+Environment design, trust boundaries, and attack surface analysis.
+
+→ [Architecture Overview](architecture/architecture-overview.md)
+
+---
+
+### Attack Simulation
+Simulated Kerberos exposure, privilege escalation, command execution telemetry, and authentication pattern analysis.
+
+→ [Attack Scenarios](attack-simulation/attack-scenarios.md)
+
+---
+
+### Detection Engineering
+Audit configuration, event coverage validation, and MITRE ATT&CK alignment.
+
+→ [Detection Controls](detection-engineering/detection-controls.md)
+
+---
+
+### Hardening
+Defensive measures applied to reduce identity attack surface and enforce stronger security posture.
+
+→ [Hardening Actions](hardening/hardening-actions.md)
+
+---
+
+### Findings Summary
+Enterprise-style audit checklist and post-control validation results.
+
+→ [Audit Checklist](findings-summary/audit-checklist.md)
+
+---
+
+## Evidence
+
+All validation artifacts are stored in:
+
+`/evidence`
+
+Screenshots are contextually linked inside each relevant documentation section.
+
+---
+
+## Outcome
+
+Demonstrated practical Active Directory security engineering capability across:
+
+- Identity threat modeling
+- Kerberos security analysis
+- Privileged access monitoring
+- Audit configuration
+- Defensive hardening validation
