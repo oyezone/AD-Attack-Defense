@@ -103,3 +103,18 @@ The outcome reflects practical capability in:
 - Kerberos security hardening
 - Privileged access monitoring
 - Enterprise audit configuration
+
+
+---
+
+## MITRE ATT&CK Mapping
+
+| Technique | MITRE ID | Description |
+|------------|----------|-------------|
+| Account Manipulation | T1098 | Added user to Domain Admins group |
+| Create Account | T1136 | Created new domain user |
+| Kerberoasting Exposure | T1558.003 | Service account SPN ticket requested |
+| Valid Accounts | T1078 | Authenticated logon using domain credentials |
+| Command Execution | T1059 | Process creation telemetry monitored |
+
+This mapping aligns simulated activity to enterprise threat modeling frameworks and validates detection coverage against known adversary behaviors.
