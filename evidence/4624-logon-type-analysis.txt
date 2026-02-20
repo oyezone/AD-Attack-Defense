@@ -1,0 +1,71 @@
++ System 
+
+  - Provider 
+
+   [ Name]  Microsoft-Windows-Security-Auditing 
+   [ Guid]  {54849625-5478-4994-a5ba-3e3b0328c30d} 
+ 
+   EventID 4624 
+ 
+   Version 3 
+ 
+   Level 0 
+ 
+   Task 12544 
+ 
+   Opcode 0 
+ 
+   Keywords 0x8020000000000000 
+ 
+  - TimeCreated 
+
+   [ SystemTime]  2026-02-19T06:18:49.3983141Z 
+ 
+   EventRecordID 1776478 
+ 
+  - Correlation 
+
+   [ ActivityID]  {11259325-a163-0001-d993-251163a1dc01} 
+ 
+  - Execution 
+
+   [ ProcessID]  892 
+   [ ThreadID]  3864 
+ 
+   Channel Security 
+ 
+   Computer DC01.corp.local 
+ 
+   Security 
+ 
+
+- EventData 
+
+  SubjectUserSid S-1-5-18 
+  SubjectUserName DC01$ 
+  SubjectDomainName CORP 
+  SubjectLogonId 0x3e7 
+  TargetUserSid S-1-5-18 
+  TargetUserName SYSTEM 
+  TargetDomainName NT AUTHORITY 
+  TargetLogonId 0x3e7 
+  LogonType 5 
+  LogonProcessName Advapi  
+  AuthenticationPackageName Negotiate 
+  WorkstationName - 
+  LogonGuid {afec42bb-b9f4-7f65-2881-fd4c8acaea54} 
+  TransmittedServices - 
+  LmPackageName - 
+  KeyLength 0 
+  ProcessId 0x368 
+  ProcessName C:\Windows\System32\services.exe 
+  IpAddress - 
+  IpPort - 
+  ImpersonationLevel %%1833 
+  RestrictedAdminMode - 
+  RemoteCredentialGuard - 
+  TargetOutboundUserName - 
+  TargetOutboundDomainName - 
+  VirtualAccount %%1843 
+  TargetLinkedLogonId 0x0 
+  ElevatedToken %%1842 

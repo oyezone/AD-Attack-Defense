@@ -1,0 +1,71 @@
++ System 
+
+  - Provider 
+
+   [ Name]  Microsoft-Windows-Security-Auditing 
+   [ Guid]  {54849625-5478-4994-a5ba-3e3b0328c30d} 
+ 
+   EventID 4624 
+ 
+   Version 3 
+ 
+   Level 0 
+ 
+   Task 12544 
+ 
+   Opcode 0 
+ 
+   Keywords 0x8020000000000000 
+ 
+  - TimeCreated 
+
+   [ SystemTime]  2026-02-19T07:57:04.3728759Z 
+ 
+   EventRecordID 1830842 
+ 
+  - Correlation 
+
+   [ ActivityID]  {416c853f-a174-0001-eb85-6c4174a1dc01} 
+ 
+  - Execution 
+
+   [ ProcessID]  864 
+   [ ThreadID]  5812 
+ 
+   Channel Security 
+ 
+   Computer DC01.corp.local 
+ 
+   Security 
+ 
+
+- EventData 
+
+  SubjectUserSid S-1-5-18 
+  SubjectUserName DC01$ 
+  SubjectDomainName CORP 
+  SubjectLogonId 0x3e7 
+  TargetUserSid S-1-5-21-2376704996-2190931868-770913715-1113 
+  TargetUserName ws.admin 
+  TargetDomainName CORP 
+  TargetLogonId 0x2144b3 
+  LogonType 10 
+  LogonProcessName User32  
+  AuthenticationPackageName Negotiate 
+  WorkstationName DC01 
+  LogonGuid {00000000-0000-0000-0000-000000000000} 
+  TransmittedServices - 
+  LmPackageName - 
+  KeyLength 0 
+  ProcessId 0xa2c 
+  ProcessName C:\Windows\System32\svchost.exe 
+  IpAddress 192.168.1.193 
+  IpPort 0 
+  ImpersonationLevel %%1833 
+  RestrictedAdminMode %%1843 
+  RemoteCredentialGuard %%1843 
+  TargetOutboundUserName - 
+  TargetOutboundDomainName - 
+  VirtualAccount %%1843 
+  TargetLinkedLogonId 0x2142f8 
+  ElevatedToken %%1843 

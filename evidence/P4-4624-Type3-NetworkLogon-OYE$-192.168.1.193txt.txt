@@ -1,0 +1,69 @@
++ System 
+
+  - Provider 
+
+   [ Name]  Microsoft-Windows-Security-Auditing 
+   [ Guid]  {54849625-5478-4994-a5ba-3e3b0328c30d} 
+ 
+   EventID 4624 
+ 
+   Version 3 
+ 
+   Level 0 
+ 
+   Task 12544 
+ 
+   Opcode 0 
+ 
+   Keywords 0x8020000000000000 
+ 
+  - TimeCreated 
+
+   [ SystemTime]  2026-02-19T06:16:34.0214799Z 
+ 
+   EventRecordID 1775934 
+ 
+   Correlation 
+ 
+  - Execution 
+
+   [ ProcessID]  892 
+   [ ThreadID]  3160 
+ 
+   Channel Security 
+ 
+   Computer DC01.corp.local 
+ 
+   Security 
+ 
+
+- EventData 
+
+  SubjectUserSid S-1-0-0 
+  SubjectUserName - 
+  SubjectDomainName - 
+  SubjectLogonId 0x0 
+  TargetUserSid S-1-5-21-2376704996-2190931868-770913715-1109 
+  TargetUserName OYE$ 
+  TargetDomainName CORP.LOCAL 
+  TargetLogonId 0x361e3a 
+  LogonType 3 
+  LogonProcessName Kerberos 
+  AuthenticationPackageName Kerberos 
+  WorkstationName - 
+  LogonGuid {47be869f-2f26-4798-3405-aaba664747c2} 
+  TransmittedServices - 
+  LmPackageName - 
+  KeyLength 0 
+  ProcessId 0x0 
+  ProcessName - 
+  IpAddress 192.168.1.193 
+  IpPort 59801 
+  ImpersonationLevel %%1833 
+  RestrictedAdminMode - 
+  RemoteCredentialGuard - 
+  TargetOutboundUserName - 
+  TargetOutboundDomainName - 
+  VirtualAccount %%1843 
+  TargetLinkedLogonId 0x0 
+  ElevatedToken %%1842 

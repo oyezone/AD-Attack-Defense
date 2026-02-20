@@ -1,0 +1,56 @@
++ System 
+
+  - Provider 
+
+   [ Name]  Microsoft-Windows-Security-Auditing 
+   [ Guid]  {54849625-5478-4994-a5ba-3e3b0328c30d} 
+ 
+   EventID 4688 
+ 
+   Version 2 
+ 
+   Level 0 
+ 
+   Task 13312 
+ 
+   Opcode 0 
+ 
+   Keywords 0x8020000000000000 
+ 
+  - TimeCreated 
+
+   [ SystemTime]  2026-02-19T23:47:52.2502706Z 
+ 
+   EventRecordID 1884797 
+ 
+   Correlation 
+ 
+  - Execution 
+
+   [ ProcessID]  4 
+   [ ThreadID]  7228 
+ 
+   Channel Security 
+ 
+   Computer DC01.corp.local 
+ 
+   Security 
+ 
+
+- EventData 
+
+  SubjectUserSid S-1-5-18 
+  SubjectUserName DC01$ 
+  SubjectDomainName CORP 
+  SubjectLogonId 0x3e7 
+  NewProcessId 0x26f8 
+  NewProcessName C:\Windows\System32\conhost.exe 
+  TokenElevationType %%1936 
+  ProcessId 0x790 
+  CommandLine \??\C:\WINDOWS\system32\conhost.exe 0xffffffff -ForceV1 
+  TargetUserSid S-1-0-0 
+  TargetUserName - 
+  TargetDomainName - 
+  TargetLogonId 0x0 
+  ParentProcessName C:\Windows\System32\sdbinst.exe 
+  MandatoryLabel S-1-16-16384 
