@@ -60,5 +60,5 @@ All evidence located in `/evidence`.
 ![Process Creation](../evidence/10-attack-process-creation-4688.png)
 
 ### Logon Analysis
-![Logon Type 3](../evidence/14-logon-type-3-network.png)
-![Logon Type 10](../evidence/15-logon-type-10-rdp.png)
+![Logon Type 3](../evidence/14-logon-type-3-network.txt)
+![Logon Type 10](../evidence/15-logon-type-10-rdp.txt)
