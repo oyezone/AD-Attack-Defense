@@ -23,3 +23,14 @@
 All simulated attack behaviors generated expected security log telemetry.
 
 This confirms visibility coverage across identity-related attack paths.
+
+## Supporting Evidence
+
+- Advanced Audit Policy  
+  ![Audit Policy](../evidence/05-gpo-advanced-audit-policy.png)
+
+- Command-line Logging (4688)  
+  ![4688](../evidence/10-attack-process-creation-4688.png)
+
+- Kerberos TGS Monitoring  
+  ![4769](../evidence/12-kerberos-tgs-request-4769-rc4.png)
