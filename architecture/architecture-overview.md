@@ -33,3 +33,15 @@ This lab models a simplified enterprise Active Directory identity environment.
 - Insufficient logging visibility (pre-hardening)
 
 Architecture validation evidence located in `/evidence`.
+
+
+## Supporting Evidence
+
+- DC01 IP Configuration  
+  ![DC01 IP](../evidence/01-architecture-dc01-ipconfig.png)
+
+- Workstation IP Configuration  
+  ![Workstation IP](../evidence/02-architecture-workstation-ipconfig.png)
+
+- OU Structure  
+  ![OU Structure](../evidence/03-ou-structure.png)
