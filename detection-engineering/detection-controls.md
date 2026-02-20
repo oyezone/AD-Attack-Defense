@@ -27,7 +27,7 @@ This confirms visibility coverage across identity-related attack paths.
 ## Supporting Evidence
 
 - Advanced Audit Policy  
-  ![Audit Policy](../evidence/05-gpo-advanced-audit-policy.png)
+  ![Audit Policy](../evidence/05-gpo-advanced-audit-policy-change.png)
 
 - Command-line Logging (4688)  
   ![4688](../evidence/10-attack-process-creation-4688.png)
